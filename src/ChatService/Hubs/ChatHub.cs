@@ -31,8 +31,5 @@ namespace ChatService.Hubs
                     .SendAsync("ReceiveMessage", connection.Username, message);
             }
         }
-
-
-
     }
 }
