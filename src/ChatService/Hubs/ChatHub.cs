@@ -15,5 +15,8 @@ namespace ChatService.Hubs
             await Clients.Group(connection.ChatRoom)
                 .SendAsync("ReceiveMessage", "admin", $"{connection.Username} has joined {connection.ChatRoom}");
         }
+
+        public async Task SendMessage(UserConnection connection, string message)
+            => await Clients.All.SendAsync("ReceiveMessage", connection.Username, message);
     }
 }
