@@ -1,31 +1,99 @@
-# PoC .NET template
+# 🚀 C# .NET PoC - SignalR  
 
-A template repository for .NET PoC (Proof of Concept)
+![GitHub top language](https://img.shields.io/github/languages/top/vitosandrin/PoC-signalR)
+![GitHub last commit](https://img.shields.io/github/last-commit/vitosandrin/PoC-signalR)
+![GitHub issues](https://img.shields.io/github/issues/vitosandrin/PoC-signalR)
+
+## 📖 About the Project  
+
+This repository contains a **Proof of Concept (PoC)** designed to demonstrate [describe the objective of the PoC].  
+The main goal is to validate the technical feasibility of [describe the specific use case] using **C# .NET**.  
+
+## 🛠️ Technologies Used  
+
+- **.NET [8]**  
+- **ASP.NET Core**  
+- **Entity Framework Core**  
+- **Docker**  
+- **SQL Server / PostgreSQL**  
+- **Swagger for API documentation**  
+- **Other libraries used in the project**  
 
 ---
 
-- Create a new repository using this one as a template (click the green button at the top right of this page).
-- Edit [README.md](README.md) file to align with your PoC.
-- Change the solution and projects to suit your investigation/test/concept.
+## 📦 How to Run the Project  
 
-- Layout created using [Vercel V0](https://v0.dev/)
+### 🔹 **Prerequisites**  
 
-## Installation Guide
+Before starting, ensure you have the following dependencies installed:  
 
-Follow these steps to set up the project. This guide includes installation scripts for PowerShell, Shell/Bash, and Batch.
+- [.NET SDK](https://dotnet.microsoft.com/download)  
+- [Docker](https://www.docker.com/get-started) (if running with containers)  
+- [SQL Server / PostgreSQL](https://www.microsoft.com/sql-server/)  
 
-### PowerShell
+### 🔹 **Step-by-Step Guide**  
 
-- Navigate to client application at .\src\Web
-```ps
-npm install 
+1. **Clone this repository**  
+   ```sh
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
+2. **Set up environment variables**  
+   - Rename `.env.example` to `.env` and configure the necessary variables.  
+
+3. **Install dependencies**  
+   ```sh
+   dotnet restore
+   ```
+
+4. **Run the application**  
+   ```sh
+   dotnet run
+   ```
+
+5. **Access the API**  
+   - Swagger: [http://localhost:5000/swagger](http://localhost:5000/swagger)  
+   - API: [http://localhost:5000/api](http://localhost:5000/api)  
+
+---
+
+## 🧩 Project Structure  
+
 ```
-- Then run
-```ps
-npm run dev 
+📦 YourProject
+ ┣ 📂 src              # Main source code
+ ┃ ┣ 📂 Application   # Business logic and use cases
+ ┃ ┣ 📂 Domain        # Entities and domain rules
+ ┃ ┣ 📂 Infrastructure # Persistence, Repositories, Configurations
+ ┃ ┣ 📂 API           # API controllers and endpoints
+ ┃ ┗ 📜 Program.cs    # Main application entry point
+ ┣ 📂 tests           # Unit and integration tests
+ ┣ 📜 .gitignore      # Git ignored files
+ ┣ 📜 README.md       # Project documentation
+ ┣ 📜 docker-compose.yml # Docker Compose file
+ ┗ 📜 appsettings.json # Application configuration
 ```
 
-- Navigate to server application at .\src\ChatService
-```ps
-dotnet run 
-```
+---
+
+## 🏗️ Contributing  
+
+If you want to contribute, follow these steps:  
+
+1. **Fork the repository**  
+2. **Create a new branch** (`git checkout -b feature-branch`)  
+3. **Make your changes**  
+4. **Commit your changes** (`git commit -m "Add new feature"`)  
+5. **Push to the branch** (`git push origin feature-branch`)  
+6. **Open a Pull Request**  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.  
+
+---
+
+### ✨ **Happy coding!** 🚀
